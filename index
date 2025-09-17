@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoulArt Temple</title>
+  
+  <!-- PWA Manifest and Meta Tags -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#C9A24F">
+  <meta name="background-color" content="#F6F3EC">
+  <meta name="description" content="Your sacred digital space to heal, harmonise, and embody your highest truth through oracle cards, healing tools, and spiritual guidance.">
+  
+  <!-- iOS PWA Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="SoulArt Temple">
+  <link rel="apple-touch-icon" href="/icon-192x192.png">
+  
+  <!-- Standard Meta Tags -->
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="spiritual healing, oracle cards, emotion decoder, allergy identifier, belief decoder, meditation, mindfulness, soul healing">
+  
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <img src="Logo.png" alt="SoulArt Logo" class="logo">
+    <h1>SoulArt Temple</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="navigate('home')">Home</a>
+    <a href="#" onclick="navigate('initiation')">Begin Journey</a>
+    <a href="#" onclick="navigate('therapy')">Self Therapy</a>
+    <a href="#" onclick="navigate('soulart-cards')">SoulArt Cards</a>
+    <a href="#" onclick="navigate('journal')">Journal</a>
+    <div class="dropdown" id="membership-dropdown">
+      <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Membership ▼</a>
+      <div class="dropdown-content" id="dropdown-content">
+        <a href="#" onclick="navigate('emotion-decoder')">Emotion Decoder</a>
+        <a href="#" onclick="navigate('allergy-identifier')">Allergy Identifier</a>
+        <a href="#" onclick="navigate('belief-identifier')">Belief Identifier</a>
+        <a href="#" onclick="navigate('belief-decoder')">Belief Decoder</a>
+        <a href="#" onclick="navigate('membership')">Membership Info</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <h2>Welcome to the SoulArt Temple</h2>
+    <p>This is your sacred digital space to heal, harmonise, and embody your highest truth.</p>
+    <button onclick="navigate('initiation')">Begin Your SoulArt Journey</button>
+  </main>
+
+  <footer>
+    © 2025 SoulArt Temple | Walk gently in your becoming
+  </footer>
+
+</body>
+</html>
