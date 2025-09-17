@@ -3221,3 +3221,7 @@ function addTouchSupport(carousel) {
   // Set initial cursor
   carousel.style.cursor = 'grab';
 }
+  } else if (page === 'flow-art') {
+    import('./modules/flowArt.js').then(module => {
+      module.renderFlowArtModule();
+    });
